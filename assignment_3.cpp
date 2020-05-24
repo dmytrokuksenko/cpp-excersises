@@ -16,7 +16,7 @@ using namespace std;
 /**
  	 Prints the area of a polygon and (x,y) points that define it
 
- 	 @param Polygon* p: pointer to a Polygon class
+ 	 @param *p: pointer to a Polygon class
 */
 
 void printAttributes(Polygon *p){
