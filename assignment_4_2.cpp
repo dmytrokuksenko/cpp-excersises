@@ -10,7 +10,7 @@
 #include <iostream>
 #include <string>
 
-//A minimum function of two elements using preprocessors macros
+//Minimum of two elements of any comparable type using preprocessors macros
 #define get_min(a, b) (a < b ? a : b)
 
 
@@ -40,4 +40,3 @@ int main(){
 
 	return 0;
 }
-
