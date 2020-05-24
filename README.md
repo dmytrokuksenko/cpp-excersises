@@ -12,7 +12,4 @@ Assignment #2: functions, arrays and strings, pointers
 
 Assignment #3: classes, object-oriented programming, polymorphism 
 
-Assignment #4: templates, operator overloading, stack, and graphs 
-
- 
-
+Assignment #4: templates, operator overloading, stack, and graphs
