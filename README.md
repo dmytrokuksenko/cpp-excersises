@@ -4,7 +4,7 @@
 
 This course covers fundamental concepts of the C++ object-oriented programming language. It has four programming assignments with the scope outlined below. A detailed description of the assignments can be found on the official webpage of the course. 
 
-#Scope of programming assignments:
+# Scope of programming assignments:
 
 Assignment #1: variables and data types, flow control 
 
