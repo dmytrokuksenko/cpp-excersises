@@ -1,5 +1,8 @@
 /**
-	Assignment #3
+	Assignment #3: classes, object-oriented programming, and polymorphism
+
+	@author Dmytro Kuksenko
+	@date May 24, 2020
 */
 
 #include <iostream>
@@ -10,19 +13,23 @@
 
 using namespace std;
 
+/**
+ 	 Prints the area of a polygon and (x,y) points that define it
+
+ 	 @param Polygon* p: pointer to a Polygon class
+*/
+
 void printAttributes(Polygon *p){
 
-	cout << "p's area is:" << p->area() <<endl;
+	cout << "p's area is:" << p->area() << endl;
 
-	cout << "p's points are: \n";
+	cout << "p's points are: " << endl;
 	const PointArray *pa = p->getPoints();
 
 	for(int i=0; i < pa->getSize(); ++i){
 
 		cout << "(" << pa-> get(i)-> getX() << ", " << pa->get(i)->getY() << ")\n" ;
-
 	};
-
 };
 
 
@@ -48,7 +55,6 @@ int main(){
 
 	Triangle tri(p1, p2, p3);
 	printAttributes(&tri);
-
 
 	return 0;
 }
