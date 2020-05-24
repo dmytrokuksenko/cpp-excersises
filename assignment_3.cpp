@@ -1,8 +1,8 @@
-/* Assignment 3 from MIT C++ course */
+/**
+	Assignment #3
+*/
 
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
 #include <cmath>
 #include <string>
 #include <sstream>
