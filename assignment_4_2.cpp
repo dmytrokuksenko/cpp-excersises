@@ -1,10 +1,9 @@
 /**
-	Assignment #4.2
-	Using templates, implement a min function which returns the minimum of two elements of
-	any comparable type. Implement the same function using preporcessors macros only.
-
+	@project: MIT assignments
+	@file: assignment_4_2.cpp
+	@description: implement function using temaplates
 	@author: Dmytro Kuksenko
-	@date: May 24, 2020
+	@date: 2020-05-30
 */
 
 
