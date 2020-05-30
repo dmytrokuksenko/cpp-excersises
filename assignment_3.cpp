@@ -1,8 +1,10 @@
 /**
-	Assignment #3: classes, object-oriented programming, and polymorphism
+	@project: MIT assignments
+	@file: assignment_3.cpp
+	@description: classes, polymorphism, and inheritance
 
-	@author Dmytro Kuksenko
-	@date May 24, 2020
+	@author: Dmytro Kuksenko
+	@date: 2020-05-30
 */
 
 #include <iostream>
@@ -14,11 +16,9 @@
 using namespace std;
 
 /**
- 	 Prints the area of a polygon and (x,y) points that define it
-
- 	 @param *p: pointer to a Polygon class
+ 	 Prints the area of a polygon and (x,y) points that define it.
+ 	 @param p: pointer to a Polygon class
 */
-
 void printAttributes(Polygon *p){
 
 	cout << "p's area is:" << p->area() << endl;
@@ -58,4 +58,3 @@ int main(){
 
 	return 0;
 }
-
