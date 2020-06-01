@@ -127,22 +127,36 @@ protected:
 public:
 	/**
 		Creates a polygon from an array of points.
-		@param a, b: integer coordinates (x, y) of the point
+		@param pa: an existing array of points
 	*/
 	Polygon (const  PointArray &pa);
 
 	/**
 		Creates a polygon from an array of points.
-		@param a, b: integer coordinates (x, y) of the point
+		@param points: an array of points
+		@param numPolygons: the length of the array
 	*/
 	Polygon (const Point points [], const int numPolygons);
 
+
+	/**
+		Calculates the area of the polygon.
+	*/
 	virtual double area() const = 0;
 
+	/**
+		Returns the number of existing polygons.
+	*/
 	int getNumPolygons() const {return numPolygons;};
 
+	/**
+		Returns the number of sides of a polygon.
+	*/
 	int getNumSize () const {return points.getSize();};
 
+	/**
+		Returns a pointer to the unmodifiable array of points for a given polygon.
+	*/
 	const PointArray *getPoints() const {return &points;};
 
 	~ Polygon() {-- numPolygons;};
@@ -153,10 +167,25 @@ class Rectangle : public Polygon
 {
 public:
 
+	/**
+		Creates the rectangle from two points.
+		@param a: the lower left coordinates
+		@param b: the upper right coordinates
+	*/
 	Rectangle (const Point &a, const Point &b);
 
+	/**
+		Creates the rectangle from four points.
+		@param a: the lower left x coordinates
+		@param b: the lower left y coordinates
+		@param c: the upper right x coordinates
+		@param d: the upper right y coordinates
+	*/
 	Rectangle (const int a, const int b, const int c, const int d);
 
+	/**
+		Calculates the area of a rectangle.
+	*/
 	virtual double area() const;
 };
 
@@ -164,8 +193,14 @@ class Triangle : public Polygon
 {
 public:
 
+	/**
+		Constructs a triangle from three points.
+	*/
 	Triangle (const Point &a, const Point &b, const Point &c);
 
+	/**
+		Calculates the area of a triangle.
+	*/
 	virtual double area() const;
 };
 
