@@ -1,7 +1,7 @@
 /**
 	@project: MIT assignments
 	@file: assignment_2.5.cpp
-	@description: calculating PI using Monte-Carlo Method
+	@description: calculate PI using Monte-Carlo Method
  	@author: Dmytro Kuksenko
 	@date: 2020-06-05
 */
@@ -12,18 +12,18 @@
 
 
 /**
-  Description.
-  @param inSquare: total number of throws
-  @return pi: approximated value of pi
+  Approximates PI using Monte-Carlo method.
+  @param N: total number of throws
+  @return pi: approximated value of PI
  */
 
-double piApproximation(const int inSquare)
+double piApproximation(const int n)
 {
+	srand(time(0));
 	int inCircle = 0;
 
-	for (int i = 0; i < inSquare; ++i)
+	for (int i = 0; i < n; ++i)
 	{
-		//srand(time(0));
 		double x = (double)rand()/RAND_MAX;
 		double y = (double)rand()/RAND_MAX;
 
@@ -33,7 +33,7 @@ double piApproximation(const int inSquare)
 		}
 	}
 
-	double pi = (double)4*inCircle/inSquare;
+	double pi = 4.0*inCircle/n;
 	return pi;
 };
 
@@ -51,5 +51,3 @@ int main()
 	return 0;
 
 };
-
-
